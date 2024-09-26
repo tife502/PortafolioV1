@@ -1,0 +1,157 @@
+/* Reset básico para eliminar márgenes y rellenos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales para el body */
+body {
+    background-image: url('img/progra.png'); /* Ruta a la imagen en la carpeta img */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-size: 100%; /* Ajusta el tamaño de la imagen */
+    background-position: center center; /* Centra la imagen en el fondo */
+    background-attachment: fixed; /* Fija la imagen al viewport */
+    background-color: #f5f5f5; /* Color de fondo de respaldo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-bottom: 4rem; /* Espacio suficiente para el footer */
+}
+
+/* Estilos para el header */
+header {
+    background: #1e435c; /* Color de fondo del header */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 1rem 0; /* Ajusta el padding superior e inferior para reducir el tamaño */
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para el header */
+}
+
+/* Estilos del nav */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0.5rem; /* Ajusta la posición del menú */
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1ebff0; /* Color de acento para el efecto hover */
+}
+
+/* Estilo de la sección hero */
+.hero {
+    padding: 1rem 0; /* Ajusta el padding superior e inferior */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alinea el texto al centro */
+    border-radius: 10px; /* Opcional: añade bordes redondeados */
+    margin: 0 auto; /* Centra la sección */
+    max-width: 80%; /* Controla el ancho máximo de la sección */
+}
+
+.hero h1 {
+    font-size: 2rem; /* Ajusta el tamaño del texto */
+}
+
+.hero h1 span {
+    color: #1ebff0; /* Color de acento para el texto destacado */
+}
+
+.hero p {
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+}
+
+.about-container {
+    text-align: center; /* Alinea todo el contenido al centro */
+    padding: 2rem; /* Espaciado alrededor del contenido */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    position: relative;
+}
+
+.about-photo {
+    border-radius: 50%; /* Bordes redondeados para la foto */
+    border: 4px solid #ddd; /* Agrega un borde sutil */
+    width: 170px; /* Ajusta el tamaño de la foto */
+    height: 170px; /* Ajusta el tamaño de la foto */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área */
+    margin-top: -5rem; /* Ajusta el margen superior para reducir el espacio */
+    margin-bottom: 1rem; /* Espacio debajo de la foto */
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #1ebff0;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para los proyectos */
+.project {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+    margin: 0.5rem 0;
+}
+
+.project p {
+    color: #666;
+}
+
+/* Estilos para el footer */
+footer {
+    background: #1e435c; 
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Agrega un efecto de desenfoque detrás del footer */
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.2); /* Sombra sutil para mejorar la visibilidad */
+    z-index: 1000; /* Asegura que el footer esté sobre otros elementos */
+}
+
+/* Estilos de enlaces */
+a {
+    color: #104e91;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

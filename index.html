@@ -1,110 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="estilos.css">
+    <meta name="description" content="Portafolio de Jean Duran.">
+    <meta name="author" content="Jean Fernando Duran Zapata">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#more">Algo más</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Hola, soy <span>Jean Fernando Duran Zapata.</span></h1>
+            <p>Tecnico en Mantenimiento de Equipos Electronicos Industriales. | Estudiante de tecnología en desarrollo de software.</p>
+        </div>
+    </header>
 
-    <!--MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Jean</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="incio">INICIO</a></li>
-                    <li><a href="sobreMi">SOBRE MI</a></li>
-                    <li><a href="skills">SKILLS</a></li>
-                    <li><a href="curriculum">CURRICULUM</a></li>
-                    <li><a href="portafolio">PORTAFOLIO</a></li>
-                    <li><a href="contacto">CONTACTO</a></li>
+    <section id="about">
+      <div class="about-container"></div>
+        <img src="img/Foto.jpeg" alt="Foto de Jean Duran" class="about-photo">
+        <h2>Sobre Mí</h2>
+        <h3>Descripción.</h3>
+        <p>
+            Soy Jean Fernando Duran, tengo 20 años y soy un estudiante de desarrollo de software con una sólida experiencia enatención al cliente, lo que me ha dotado de excelentes habilidades de comunicacióny empatía. Tengo conocimientos en MySQL, C#,C++ y nociones básicas dePython. Estoy buscandooportunidades para trabajaren el área de sistemas, dondepueda aplicar y expandir mishabilidades técnicas. Soy untrabajador en equipo altamente responsable, con un gran deseo de aprender y crecer en el campo del desarrollo de software.
+        </p>
+ 
+      </div>
+    </section>
 
-                </ul>
-            </nav>
-            <div class="nav-responsive">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
+    <section id="education">
+        <h2>Educación</h2>
+        <div class="education-item">
+            <h3>Tecnología en Desarrollo de Software.</h3>
+            <p>Universidad Tecnológica de Pereira.</p>
+            <p>Actualmente cursando el sexto semestre.</p>
+        </div>
+        <div class="education-item">
+            <h3>Tecnico en Mantenimiento de Equipos Electronicos Industriales.</h3>
+            <p>SENA centro de diseño e innovación tecnológica industrial.</p>
+            <p>Finalizado en el año 2022.</p>
+        </div>
+    </section>
 
-    <section id="incio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="IMG/Nick.png" alt="">
+    <section id="skills">
+        <h2>Habilidades </h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Desarrollo de Software.</h3>
+                <p>Programación en lenguajes como JavaScript, MySQL, C# , C++ y React.</p>
             </div>
-            <h1>Jean Duran</h1>
-            <h2>Desarrollador De Software Backend</h2>
-            <div class="redes">
-                <a href="#"><i class="fa-regular fa-envelope"></i></a>
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <div class="skill">
+                <h3>Comunicacion.</h3>
+                <p>Capacidad de hablar en publico, atencion al cliente fluida.</p>
             </div>
         </div>
     </section>
 
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre mi</h2>
-            <p> <span>Soy un estudiante de desarrollo de software con una sólida experiencia en atención al cliente, lo que me ha dotado de excelentes habilidades de comunicación y empatía. Tengo conocimientos en MySQL, C#, C++ y nociones básicas de Python. Estoy
-                buscando oportunidades para trabajar en el área de sistemas, donde pueda aplicar y expandir mis habilidades técnicas. Soy un trabajador en equipo altamente responsable, con un gran deseo de aprender y crecer en el campo del desarrollo
-                de software.</span></p>
-
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <img src="img/Diseño web.jpg" alt="Proyecto 1">
+            <h3>Sistema de Reservas de Espacios Deportivos</h3>
+            <p>Proyecto que permite tener un sistena que facilita la reservas de espacios para diferentes funcionalidades .</p>
         </div>
-        <div class="fila">
-            <div class="col">
-                <h3>Datos Personales</h3>
-                <ul>
-                    <li>
-                        <strong>Cumpleaños</strong> 02-05-2004
-                    </li>
-                    <li>
-                        <strong>Telefono</strong> 300 744 5783
-                    </li>
-                    <li>
-                        <strong>Correo Electronico</strong> j.duran2@utp.edu.co
-                    </li>
-                    <li>
-                        <strong>GitHub</strong> wwww.eexample.com
-                    </li>
-                    <li>
-                        <strong>Ocupación</strong> Estudiante
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h3>Intereses</h3>
-                <div class="contenedor-intereses">
-                    <div class="interes">
-                        <i class="fa-solid fa-gamepad"></i>
-                        <span>JUEGOS</span>
-                    </div>
-                    <div class="interes">
-                        <i class="fa-solid fa-music"></i>
-                        <span>MUSICA</span>
-                    </div>
-                    <div class="interes">
-                        <i class="fa-solid fa-book"></i>
-                        <span>APRENDIZAJE</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <button>
-            Descargar CV <i class="fa-solid fa-download"></i>
-            <span class="overlay"></span>
-            </button>
-        </div>
-
+        
     </section>
+
+    <section id="more">
+        <h2>Algo más</h2>
+        <p>
+            Me apasiona la tecnologia, especialmente todo el desarrollo de Backend. Ademas me apasiona la musica, toco algunos instrumenos entre ellos la guitarra electrica.
+            Además, tengo un gran interés en la tecnología. Me gusta estar al tanto de las últimas novedades y tendencias en este campo para seguir aprendiendo y evolucionando.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de <a href="mailto:tuemail@ejemplo.com">j.duran2@utp.edu.co</a> .</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dgh. Todos los derechos reservados.</p>
+    </footer>
 </body>
-
 </html>
