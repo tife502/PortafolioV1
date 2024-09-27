@@ -7,7 +7,7 @@
 
 /* Estilos generales para el body */
 body {
-    background-image: url('img/progra.png'); /* Ruta a la imagen en la carpeta img */
+    background-image: url('IMG/progra.png'); /* Ruta a la imagen en la carpeta img */
     background-repeat: no-repeat; /* No repetir la imagen */
     background-size: 100%; /* Ajusta el tamaño de la imagen */
     background-position: center center; /* Centra la imagen en el fondo */
